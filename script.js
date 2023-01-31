@@ -152,6 +152,7 @@ window.addEventListener('keyup', (event) => {
        break  
     case 'w':
         keys.w.pressed = false
+        player.velocity.y = 0
        break
     }
     switch(event.key){
@@ -164,6 +165,7 @@ window.addEventListener('keyup', (event) => {
       
       break
     case 'ArrowUp':
+      keys.ArrowUp.pressed = false
       enemy.velocity.y = 0
 
       break  
